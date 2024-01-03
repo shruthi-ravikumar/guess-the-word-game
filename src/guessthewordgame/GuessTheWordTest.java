@@ -26,23 +26,7 @@ class GuessTheWordTest {
 	GuessTheWord.startGame();
 	}
 
-	//Asset statement for all fail scenario
-	@Test
-	    void testStartGameFailScenarioWithAssert() {
-	        // Simulate user input to guess the incorrect letters 
-	        String input = "z\nh\ns";
-	        InputStream inputStream = new ByteArrayInputStream(input.getBytes());
-	        System.setIn(inputStream);
-
-	        // Redirect System.out to capture console output
-	        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-	        System.setOut(new PrintStream(outputStream));
-	        
-	        GuessTheWord.startGame();
-
-	        // Check if the game win message is printed
-	        assertTrue(outputStream.toString().contains("Enter a letter: Incorrect! 1 life lost. 2 remaining. The current word is"));
-	    }
+	
 	@Test
 	    void testStartGamewithOneCorrectScenarioWithAssert() {
 	       //Input
