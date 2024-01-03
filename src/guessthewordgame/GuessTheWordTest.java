@@ -46,7 +46,7 @@ class GuessTheWordTest {
 	@Test
 	    void testStartGamewithOneCorrectScenarioWithAssert() {
 	       //Input
-	        String input = "p\nl\no\nt\na\nc\nd\nk\ne\nk\ng\nb";
+	        String input = "p\nl\no\nt\na\nc\nd\nk\ne\nk\nb\ng";
 	        InputStream inputStream = new ByteArrayInputStream(input.getBytes());
 	        System.setIn(inputStream);
 
